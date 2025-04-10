@@ -25,6 +25,13 @@ PIN_MACRO(pin7, <&kp N7>)
 PIN_MACRO(pin8, <&kp N8>)
 PIN_MACRO(pin9, <&kp N9>)
 PIN_MACRO(pin10, <&kp N1 &kp N0>)
+PIN_MACRO(pin14, <&kp N1 &kp N4>)
+PIN_MACRO(pin15, <&kp N1 &kp N5>)
+PIN_MACRO(pin16, <&kp N1 &kp N6>)
+PIN_MACRO(pin18, <&kp N1 &kp N8>)
+PIN_MACRO(pin19, <&kp N1 &kp N9>)
+PIN_MACRO(pin20, <&kp N2 &kp N0>)
+PIN_MACRO(pin21, <&kp N2 &kp N1>)
 
 / {
     keymap {
@@ -41,14 +48,14 @@ PIN_MACRO(pin10, <&kp N1 &kp N0>)
                         &pin7
                         &pin8
                         &pin9
-                        &pin10>;
+                        &pin10
+                        &pin14
+                        &pin15
+                        &pin16
+                        &pin18
+                        &pin19
+                        &pin20
+                        &pin21>;
         };
     };
-};
-
-&kscan0 {
-    input-gpios
-        = <&xiao_d N (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&xiao_d N (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        ;
 };
