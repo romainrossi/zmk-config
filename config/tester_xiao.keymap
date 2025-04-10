@@ -45,3 +45,10 @@ PIN_MACRO(pin10, <&kp N1 &kp N0>)
         };
     };
 };
+
+&kscan0 {
+    input-gpios
+        = <&xiao_d N (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&xiao_d N (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        ;
+};
