@@ -14,7 +14,6 @@
     }; \
 };
 
-PIN_MACRO(pin0, <&kp N0>)
 PIN_MACRO(pin1, <&kp N1>)
 PIN_MACRO(pin2, <&kp N2>)
 PIN_MACRO(pin3, <&kp N3>)
