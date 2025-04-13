@@ -13,25 +13,6 @@
         }; \
     }; \
 };
-// label == silkscreen marking on ProMicro NRF52840
-// pin0 == label 008
-// pin1 == label 006
-// pin2 == label 017
-// pin3 == label 020
-// pin4 == label 022
-// pin6 == label 100
-// pin7 == label 011
-// pin8 == label 104
-// pin9 == label 106
-// pin10 == label 009
-// pin14 == label 111
-// pin15 == label 113
-// pin16 == label 010
-// pin18 == label 115
-// pin19 == label 002
-// pin20 == label 029
-// pin21 == label 031
-// non utilisées : pin label 101, 102, 107
 
 PIN_MACRO(pin0, <&bt BT_CLR>)
 PIN_MACRO(pin1, <&kp N1>)
